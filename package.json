@@ -1,0 +1,13 @@
+{
+  "name": "personal-library",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "build": "cd client && npm run build",
+    "render-postbuild": "cd client && npm install && npm run build && cd ../server && npm install"
+  },
+  "dependencies": {}
+}
