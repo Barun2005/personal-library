@@ -1,6 +1,7 @@
 {
   "name": "personal-library",
   "version": "1.0.0",
+  "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
     "server": "cd server && npm run dev",
@@ -9,5 +10,10 @@
     "build": "cd client && npm run build",
     "render-postbuild": "cd client && npm install && npm run build && cd ../server && npm install"
   },
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.0"
+  }
 }
