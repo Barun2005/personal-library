@@ -23,7 +23,6 @@ import {
   Home
 } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
-import { toast } from 'react-toastify';
 import BookList from '../books/BookList';
 import AddBookModal from '../books/AddBookModal';
 import StatsCard from './StatsCard';
@@ -41,6 +40,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     fetchBooks();
+    // eslint-disable-next-line
   }, []);
 
   const fetchBooks = async () => {

@@ -13,7 +13,6 @@ import Dashboard from './components/dashboard/Dashboard';
 import PrivateRoute from './components/routing/PrivateRoute';
 
 // Context
-import AuthState from './context/auth/AuthState';
 import AuthContext from './context/auth/AuthContext';
 
 const theme = createTheme({

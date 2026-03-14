@@ -23,7 +23,6 @@ const AddBookModal = ({ open, onClose, onBookAdded }) => {
   const [activeStep, setActiveStep] = useState(0);
   const [loading, setLoading] = useState(false);
   const [fileUrl, setFileUrl] = useState('');
-  const [fileName, setFileName] = useState('');
   const [formData, setFormData] = useState({
     title: '',
     author: '',
@@ -92,7 +91,6 @@ const AddBookModal = ({ open, onClose, onBookAdded }) => {
         coverImage: 'https://via.placeholder.com/150x200?text=No+Cover',
       });
       setFileUrl('');
-      setFileName('');
       setActiveStep(0);
       onBookAdded();
       onClose();

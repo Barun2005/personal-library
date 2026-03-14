@@ -23,7 +23,6 @@ import {
   Edit,
   Visibility,
   Download,
-  Star,
   Book,
 } from '@mui/icons-material';
 import { toast } from 'react-toastify';
